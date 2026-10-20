@@ -1,0 +1,265 @@
+/* ==========================================================================
+   NATEN ESTATES - BASE STYLES & RESET
+   ========================================================================== */
+
+/* Box sizing and baseline reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Custom refined scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-muted);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-bg-alt);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage);
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.25rem);
+  font-weight: var(--fw-semibold);
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw + 0.5rem, 3.15rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2vw + 0.3rem, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.15rem, 1.2vw + 0.2rem, 1.5rem);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+  padding-right: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+  padding-right: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+/* Section Spacing */
+.section {
+  padding-top: clamp(4rem, 8vw, 6.5rem);
+  padding-bottom: clamp(4rem, 8vw, 6.5rem);
+  position: relative;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-cream {
+  background-color: var(--color-bg-sand);
+}
+
+.section-header {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.section-header.text-left {
+  text-align: left;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-sage);
+  margin-bottom: var(--space-sm);
+}
+
+.section-tag::before,
+.section-tag::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background-color: var(--color-sage-light);
+}
+
+.section-header.text-left .section-tag::after {
+  display: none;
+}
+
+.section-title {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header.text-left .section-subtitle {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Brand Logo Typography */
+.brand-logo {
+  font-family: var(--font-logo);
+  font-size: 1.45rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand-logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-xs);
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-logo);
+  font-weight: var(--fw-bold);
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(28, 56, 41, 0.2);
+  transition: transform var(--transition-normal);
+}
+
+.brand-logo:hover .brand-logo-mark {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Micro-Animations & Reveal Utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(30, 58, 43, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(30, 58, 43, 0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--transition-smooth) forwards;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

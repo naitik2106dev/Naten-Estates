@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naten Estates | Luxury Real Estate in East Delhi | Buy, Sell & Rent</title>
+  <meta name="description" content="Naten Estates is a premier luxury real estate advisory based in East Delhi, Delhi NCR (110092). Curated builder floors, penthouses, luxury villas, and commercial suites in Preet Vihar, Mayur Vihar, and Anand Vihar." />
+  <meta name="keywords" content="Naten Estates, East Delhi Real Estate, Preet Vihar Builder Floor, Mayur Vihar Penthouse, Anand Vihar Villa, Buy House East Delhi, Rent Luxury Apartment East Delhi" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Naten Estates | Luxury Real Estate in East Delhi" />
+  <meta property="og:description" content="Discover curated luxury residences and commercial spaces across East Delhi. Grounded in trust, verified titles, and bespoke advisory." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero.jpg" />
+
+  <!-- Google Fonts: Cinzel (Logo), Cormorant Garamond (Headings), Plus Jakarta Sans (Body & UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+
+  <!-- Structured Data Schema for Real Estate Agent -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Naten Estates",
+    "image": "assets/images/hero.jpg",
+    "telephone": ["+917011491747", "+917011683813"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "East Delhi",
+      "addressLocality": "Delhi NCR",
+      "postalCode": "110092",
+      "addressCountry": "IN"
+    },
+    "priceRange": "₹₹₹₹",
+    "openingHours": "Mo-Su 09:30-20:00"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       TOP STICKY NAVIGATION HEADER
+       ====================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Naten Estates Home">
+        <span class="brand-logo-mark">N</span>
+        <span>Naten Estates</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#buy" class="nav-link">Buy</a>
+        <a href="#sell" class="nav-link">Sell</a>
+        <a href="#rent" class="nav-link">Rent</a>
+        <a href="#about" class="nav-link">About & FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="btn btn-primary btn-appointment-nav btn-trigger-appointment" id="headerBookBtn">
+          Book Appointment
+        </button>
+
+        <!-- Mobile Drawer Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Mobile Menu">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE NAVIGATION DRAWER & BACKDROP
+       ====================================================================== -->
+  <div class="mobile-nav-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="#home" class="brand-logo">
+        <span class="brand-logo-mark">N</span>
+        <span>Naten Estates</span>
+      </a>
+      <button class="modal-close" id="mobileClose" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#buy" class="mobile-nav-link">Buy</a>
+      <a href="#sell" class="mobile-nav-link">Sell</a>
+      <a href="#rent" class="mobile-nav-link">Rent</a>
+      <a href="#about" class="mobile-nav-link">About & FAQ</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <button class="btn btn-primary btn-block btn-trigger-appointment">
+        Book Appointment
+      </button>
+      <a href="https://wa.me/917011491747" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid btn-block">
+        WhatsApp: +91 7011491747
+      </a>
+      <div style="font-size: 0.8rem; color: var(--color-text-muted); text-align: center; margin-top: 6px;">
+        East Delhi, Delhi NCR - 110092
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN VIEWS CONTAINER (DYNAMIC MULTI-PAGE SPA ROUTING)
+       ====================================================================== -->
+  <main id="mainApp">
+
+    <!-- ==================================================================
+         PAGE 1: HOME PAGE
+         ================================================================== -->
+    <section class="page-view active" id="view-home">
+      
+      <!-- Hero Section with Cinematic Background & Advanced Search -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-tag">East Delhi • Delhi NCR • Pincode 110092</div>
+            <h1 class="hero-title">Find Your <span>Next Address</span></h1>
+            <p class="hero-subtitle">
+              Curated luxury residences, boutique builder floors, and premium commercial spaces crafted for refined living in East Delhi.
+            </p>
+          </div>
+
+          <!-- Advanced Search Bar with Filters -->
+          <div class="hero-search-wrapper">
+            <div class="search-filter-card">
+              <div class="filter-tabs">
+                <button type="button" class="filter-tab hero-search-tab active" data-purpose="Buy">Buy</button>
+                <button type="button" class="filter-tab hero-search-tab" data-purpose="Rent">Rent</button>
+                <button type="button" class="filter-tab hero-search-tab" data-purpose="Commercial">Commercial</button>
+              </div>
+
+              <form id="heroSearchForm" class="filter-grid">
+                <!-- Property Type Filter -->
+                <div class="filter-group">
+                  <label class="filter-label" for="heroFilterType">Property Type</label>
+                  <select id="heroFilterType" class="filter-select">
+                    <option value="all">All Types</option>
+                    <option value="Builder Floor">Luxury Builder Floor</option>
+                    <option value="Penthouse">Duplex Penthouse</option>
+                    <option value="Luxury Villa">Independent Villa</option>
+                    <option value="Commercial">Commercial Suite</option>
+                  </select>
+                </div>
+
+                <!-- Budget Range Filter -->
+                <div class="filter-group">
+                  <label class="filter-label" for="heroFilterBudget">Budget</label>
+                  <select id="heroFilterBudget" class="filter-select">
+                    <option value="all">Any Budget</option>
+                    <option value="under-3cr">Under ₹3.00 Cr</option>
+                    <option value="3cr-5cr">₹3.00 Cr - ₹5.00 Cr</option>
+                    <option value="above-5cr">Above ₹5.00 Cr</option>
+                    <option value="under-1lakh">Rent: Under ₹1 Lakh / mo</option>
+                    <option value="above-1lakh">Rent: Above ₹1 Lakh / mo</option>
+                  </select>
+                </div>
+
+                <!-- East Delhi Location Filter -->
+                <div class="filter-group">
+                  <label class="filter-label" for="heroFilterLocation">East Delhi Location</label>
+                  <select id="heroFilterLocation" class="filter-select">
+                    <option value="all">All Locations (East Delhi)</option>
+                    <option value="Preet Vihar">Preet Vihar</option>
+                    <option value="Mayur Vihar">Mayur Vihar (Ph 1 & Ext)</option>
+                    <option value="Anand Vihar">Anand Vihar / Surajmal</option>
+                    <option value="Swasthya Vihar">Swasthya Vihar</option>
+                    <option value="Patparganj">Patparganj / IP Ext</option>
+                    <option value="Laxmi Nagar">Laxmi Nagar / Vikas Marg</option>
+                  </select>
+                </div>
+
+                <!-- Search CTA Button -->
+                <div class="filter-btn-wrap">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block" style="height: 52px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    Search
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Trust Stats Ribbon -->
+      <section class="stats-ribbon">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number">₹450+ Cr</span>
+              <span class="stat-label">Luxury Assets Transacted</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">15+ Years</span>
+              <span class="stat-label">Rooted in East Delhi (110092)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Freehold & Title Verified</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1,250+</span>
+              <span class="stat-label">Happy Elite Families</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Properties Grid -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Curated Portfolio</div>
+            <h2 class="section-title">Featured Properties</h2>
+            <p class="section-subtitle">
+              Hand-picked freehold residences and penthouses selected for architectural distinction, prime orientation, and serene neighborhoods.
+            </p>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="filter-pills">
+            <button class="pill-btn home-filter-pill active" data-category="all">All Properties</button>
+            <button class="pill-btn home-filter-pill" data-category="Buy">For Sale</button>
+            <button class="pill-btn home-filter-pill" data-category="Rent">For Rent</button>
+            <button class="pill-btn home-filter-pill" data-category="Builder Floor">Builder Floors</button>
+            <button class="pill-btn home-filter-pill" data-category="Penthouse">Penthouses</button>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="properties-grid" id="featuredPropertiesContainer">
+            <!-- Dynamically populated by App.renderFeaturedProperties() -->
+          </div>
+
+          <div style="text-align: center; margin-top: 3.5rem;">
+            <a href="#buy" class="btn btn-outline btn-lg">
+              Explore Complete Catalog
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Neighborhoods Showcase (East Delhi Focus) -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Local Heritage</div>
+            <h2 class="section-title">Prime East Delhi Enclaves</h2>
+            <p class="section-subtitle">
+              We live, work, and operate exclusively in East Delhi. Deep neighborhood relationships yield off-market opportunities you won’t find elsewhere.
+            </p>
+          </div>
+
+          <div class="neighborhoods-grid">
+            <!-- Preet Vihar -->
+            <article class="neighborhood-card">
+              <div class="neighborhood-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <h3 class="neighborhood-title">Preet Vihar</h3>
+              <span class="neighborhood-pincode">PIN 110092 • Blue Line Metro</span>
+              <p class="neighborhood-desc">
+                The pinnacle of East Delhi luxury living with wide tree-lined boulevards, exclusive builder floors, high-end shopping avenues, and top CBSE schools.
+              </p>
+              <div class="neighborhood-highlights">
+                <span class="highlight-tag">Freehold Plots</span>
+                <span class="highlight-tag">Elite Gentry</span>
+                <span class="highlight-tag">Metro 3 Mins</span>
+              </div>
+            </article>
+
+            <!-- Mayur Vihar -->
+            <article class="neighborhood-card">
+              <div class="neighborhood-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h3 class="neighborhood-title">Mayur Vihar</h3>
+              <span class="neighborhood-pincode">PIN 110091 • Pink & Blue Lines</span>
+              <p class="neighborhood-desc">
+                Surrounded by green parks and Sanjay Lake. Unbeatable 6-minute expressway access to South Delhi and Noida corporate hubs via DND.
+              </p>
+              <div class="neighborhood-highlights">
+                <span class="highlight-tag">Penthouses</span>
+                <span class="highlight-tag">Sanjay Lake</span>
+                <span class="highlight-tag">DND Expressway</span>
+              </div>
+            </article>
+
+            <!-- Anand Vihar & Surajmal Vihar -->
+            <article class="neighborhood-card">
+              <div class="neighborhood-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <h3 class="neighborhood-title">Anand & Surajmal Vihar</h3>
+              <span class="neighborhood-pincode">PIN 110092 • Transport Node</span>
+              <p class="neighborhood-desc">
+                Prestigious corner plots, sprawling independent bungalows, quiet residential lanes, and immediate access to Anand Vihar Railway Terminal & ISBT.
+              </p>
+              <div class="neighborhood-highlights">
+                <span class="highlight-tag">Independent Villas</span>
+                <span class="highlight-tag">Yamuna Sports</span>
+                <span class="highlight-tag">Supreme Privacy</span>
+              </div>
+            </article>
+
+            <!-- Swasthya Vihar & Nirman Vihar -->
+            <article class="neighborhood-card">
+              <div class="neighborhood-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <h3 class="neighborhood-title">Swasthya & Nirman Vihar</h3>
+              <span class="neighborhood-pincode">PIN 110092 • Vikas Marg Belt</span>
+              <p class="neighborhood-desc">
+                High-demand family sector adjacent to Vikas Marg. Renowned for dedicated community clubs, manicured resident parks, and healthcare convenience.
+              </p>
+              <div class="neighborhood-highlights">
+                <span class="highlight-tag">Garden Floors</span>
+                <span class="highlight-tag">Clubhouse</span>
+                <span class="highlight-tag">Nirman Vihar Metro</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Naten Estates (Pillars) -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">The Naten Advantage</div>
+            <h2 class="section-title">Bespoke Real Estate Advisory</h2>
+            <p class="section-subtitle">
+              Unlike transactional property brokers, Naten Estates operates as an authentic fiduciary partner for High Net Worth families and institutional clients.
+            </p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-num">01</div>
+              <h3 class="pillar-title">Hyper-Local Title Verification</h3>
+              <p class="pillar-desc">
+                Every property in our portfolio undergoes rigorous legal due diligence by senior Delhi High Court advocates. We guarantee 100% clean, dispute-free freehold titles.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-num">02</div>
+              <h3 class="pillar-title">Curated Off-Market Access</h3>
+              <p class="pillar-desc">
+                Over 40% of prime East Delhi luxury builder floors and penthouses are sold privately before reaching public portals. We unlock direct access for our registered buyers.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-num">03</div>
+              <h3 class="pillar-title">Transparent Price Discovery</h3>
+              <p class="pillar-desc">
+                No inflated developer quotes or unverified intermediary markups. You receive direct registry data, neighborhood circle rates, and factual valuation metrics.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-num">04</div>
+              <h3 class="pillar-title">End-to-End Escorted Closings</h3>
+              <p class="pillar-desc">
+                From private chauffeured site viewings to loan sanctioning, stamp duty coordination, and Sub-Registrar deed execution in East Delhi — we escort every step.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="section section-cream" style="border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+        <div class="container" style="text-align: center; max-width: 820px;">
+          <h2 style="font-size: clamp(2.2rem, 4vw, 3.4rem); color: var(--color-primary); margin-bottom: 1rem;">
+            Ready to View East Delhi’s Finest Residences?
+          </h2>
+          <p style="font-size: 1.15rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
+            Book a confidential appointment with our lead property advisor or connect directly over WhatsApp for instant listings and floor plans.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg btn-trigger-appointment">
+              Book Private Appointment
+            </button>
+            <a href="https://wa.me/917011491747" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid btn-lg">
+              WhatsApp: +91 7011491747
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ==================================================================
+         PAGE 2: BUY CATALOG PAGE
+         ================================================================== -->
+    <section class="page-view" id="view-buy" style="display: none;">
+      <div class="property-detail-header">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <a href="#home">Home</a>
+            <span>/</span>
+            <span style="color: var(--color-text);">Buy Properties</span>
+          </nav>
+          <h1 style="font-size: clamp(2.4rem, 4vw, 3.5rem); color: var(--color-primary); margin-bottom: 0.5rem;">
+            Freehold Properties For Sale
+          </h1>
+          <p style="color: var(--color-text-muted); max-width: 680px; font-size: 1.1rem;">
+            Explore premium verified builder floors, penthouses, and bespoke bungalows across Preet Vihar, Mayur Vihar, and Anand Vihar in East Delhi.
+          </p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <!-- Interactive Filter Toolbar -->
+        <div class="search-filter-card" style="margin-bottom: 3rem;">
+          <form id="buyFilterForm" class="filter-grid">
+            <div class="filter-group">
+              <label class="filter-label">Property Type</label>
+              <select class="filter-select catalog-filter-type">
+                <option value="all">All Types</option>
+                <option value="Builder Floor">Builder Floor</option>
+                <option value="Penthouse">Duplex Penthouse</option>
+                <option value="Luxury Villa">Independent Villa</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Configuration</label>
+              <select class="filter-select catalog-filter-bhk">
+                <option value="all">Any BHK</option>
+                <option value="3">3 BHK</option>
+                <option value="4">4 BHK</option>
+                <option value="5">5+ BHK / Bungalow</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Locality (East Delhi)</label>
+              <select class="filter-select catalog-filter-location">
+                <option value="all">All East Delhi</option>
+                <option value="Preet Vihar">Preet Vihar</option>
+                <option value="Mayur Vihar">Mayur Vihar</option>
+                <option value="Anand Vihar">Anand Vihar</option>
+                <option value="Patparganj">Patparganj</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Budget Range</label>
+              <select class="filter-select catalog-filter-budget">
+                <option value="all">All Budgets</option>
+                <option value="under-3cr">Under ₹3.00 Cr</option>
+                <option value="3cr-5cr">₹3.00 Cr - ₹5.00 Cr</option>
+                <option value="above-5cr">Above ₹5.00 Cr</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <!-- Buy Listings Grid -->
+        <div class="properties-grid" id="buyPropertiesCatalog">
+          <!-- Dynamically populated by renderCatalogPage('Buy') -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PAGE 3: SELL PAGE
+         ================================================================== -->
+    <section class="page-view" id="view-sell" style="display: none;">
+      <div class="property-detail-header">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <a href="#home">Home</a>
+            <span>/</span>
+            <span style="color: var(--color-text);">Sell With Us</span>
+          </nav>
+          <h1 style="font-size: clamp(2.4rem, 4vw, 3.5rem); color: var(--color-primary); margin-bottom: 0.5rem;">
+            List Your East Delhi Property
+          </h1>
+          <p style="color: var(--color-text-muted); max-width: 680px; font-size: 1.1rem;">
+            Partner with East Delhi's leading luxury brokerage. Benefit from confidential marketing, qualified HNIs, and maximum capital realization.
+          </p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="contact-layout">
+          <!-- Selling Roadmap -->
+          <div>
+            <div class="section-tag">How We Sell</div>
+            <h2 style="font-size: 2.2rem; color: var(--color-primary); margin-bottom: 1.5rem;">
+              The Naten 4-Stage Selling Protocol
+            </h2>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                <div>
+                  <h4 style="font-size: 1.25rem; color: var(--color-text); margin-bottom: 4px;">Precision Market Valuation</h4>
+                  <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-bottom: 0;">We benchmark recent deed registries in your block, floor orientation, and architectural specifications to price for maximum yield without stagnation.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                <div>
+                  <h4 style="font-size: 1.25rem; color: var(--color-text); margin-bottom: 4px;">Architectural Media & Staging</h4>
+                  <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-bottom: 0;">High-resolution photography, 4K walkthroughs, and bespoke floor plans highlight your home's unique pedigree to attract serious high-intent buyers.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                <div>
+                  <h4 style="font-size: 1.25rem; color: var(--color-text); margin-bottom: 4px;">Pre-Screened Buyer Matching</h4>
+                  <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-bottom: 0;">No casual window shoppers. Every viewing is pre-qualified for funding readiness and conducted privately under non-disclosure protocols.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+                <div>
+                  <h4 style="font-size: 1.25rem; color: var(--color-text); margin-bottom: 4px;">Sub-Registrar Escort & Closing</h4>
+                  <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-bottom: 0;">Complete documentation oversight, token agreement drafting, bank NOC, and final conveyance deed registration in East Delhi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sell Valuation Request Form Card -->
+          <div class="search-filter-card" style="box-shadow: var(--shadow-xl);">
+            <h3 style="font-size: 1.8rem; color: var(--color-primary); margin-bottom: 0.5rem;">Request Confidential Valuation</h3>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">Enter your property details below. Our senior valuation director will prepare a complimentary market report.</p>
+
+            <form id="sellPropertyForm">
+              <div class="form-group">
+                <label class="form-label">Owner Full Name <span class="required">*</span></label>
+                <input type="text" name="ownerName" class="form-control" placeholder="e.g. S.K. Aggarwal" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Phone Number <span class="required">*</span></label>
+                <input type="tel" name="ownerPhone" class="form-control" placeholder="10-digit Mobile Number" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Property Locality in East Delhi</label>
+                <select name="propertyLocality" class="form-control">
+                  <option value="Preet Vihar">Preet Vihar (PIN 110092)</option>
+                  <option value="Mayur Vihar Phase 1 / Ext">Mayur Vihar (PIN 110091)</option>
+                  <option value="Anand Vihar / Surajmal Vihar">Anand Vihar / Surajmal Vihar</option>
+                  <option value="Swasthya Vihar">Swasthya Vihar (PIN 110092)</option>
+                  <option value="Patparganj / IP Extension">Patparganj / IP Extension</option>
+                  <option value="Laxmi Nagar / Shakarpur">Laxmi Nagar Commercial Hub</option>
+                  <option value="Other East Delhi Sector">Other East Delhi Sector</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Property Type & Configuration</label>
+                <select name="propertyType" class="form-control">
+                  <option value="Builder Floor (3 BHK)">Builder Floor (3 BHK)</option>
+                  <option value="Builder Floor (4 BHK)">Builder Floor (4 BHK)</option>
+                  <option value="Duplex Penthouse">Duplex Penthouse</option>
+                  <option value="Independent Bungalow / Plot">Independent Bungalow / Freehold Plot</option>
+                  <option value="Commercial Space / Office">Commercial Space / Office</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">
+                Submit for Complimentary Valuation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PAGE 4: RENT CATALOG PAGE
+         ================================================================== -->
+    <section class="page-view" id="view-rent" style="display: none;">
+      <div class="property-detail-header">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <a href="#home">Home</a>
+            <span>/</span>
+            <span style="color: var(--color-text);">Rent Properties</span>
+          </nav>
+          <h1 style="font-size: clamp(2.4rem, 4vw, 3.5rem); color: var(--color-primary); margin-bottom: 0.5rem;">
+            Luxury Residential & Commercial Rentals
+          </h1>
+          <p style="color: var(--color-text-muted); max-width: 680px; font-size: 1.1rem;">
+            Fully furnished luxury floors, garden apartments, and corporate plug-and-play offices for executive lease in East Delhi.
+          </p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <!-- Rental Filter Toolbar -->
+        <div class="search-filter-card" style="margin-bottom: 3rem;">
+          <form id="rentFilterForm" class="filter-grid">
+            <div class="filter-group">
+              <label class="filter-label">Space Type</label>
+              <select class="filter-select catalog-filter-type">
+                <option value="all">All Rental Types</option>
+                <option value="Builder Floor">Luxury Builder Floor</option>
+                <option value="Commercial">Commercial Office</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Monthly Budget</label>
+              <select class="filter-select catalog-filter-budget">
+                <option value="all">All Monthly Rentals</option>
+                <option value="under-1lakh">Under ₹1.00 Lakh / mo</option>
+                <option value="above-1lakh">₹1.00 Lakh+ / mo</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Locality (East Delhi)</label>
+              <select class="filter-select catalog-filter-location">
+                <option value="all">All East Delhi</option>
+                <option value="Swasthya Vihar">Swasthya Vihar</option>
+                <option value="Laxmi Nagar">Laxmi Nagar Hub</option>
+                <option value="Preet Vihar">Preet Vihar</option>
+                <option value="Mayur Vihar">Mayur Vihar</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <!-- Rent Listings Grid -->
+        <div class="properties-grid" id="rentPropertiesCatalog">
+          <!-- Dynamically populated by renderCatalogPage('Rent') -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PAGE 5: ABOUT & FAQ PAGE
+         ================================================================== -->
+    <section class="page-view" id="view-about" style="display: none;">
+      <div class="property-detail-header">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <a href="#home">Home</a>
+            <span>/</span>
+            <span style="color: var(--color-text);">About & FAQ</span>
+          </nav>
+          <h1 style="font-size: clamp(2.4rem, 4vw, 3.5rem); color: var(--color-primary); margin-bottom: 0.5rem;">
+            Rooted in East Delhi, Trusted Across Delhi NCR
+          </h1>
+          <p style="color: var(--color-text-muted); max-width: 680px; font-size: 1.1rem;">
+            Headquartered in East Delhi (Pincode 110092), Naten Estates bridges deep generational property wisdom with modern luxury advisory.
+          </p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <!-- Narrative Section -->
+        <div style="max-width: 860px; margin: 0 auto 5rem;">
+          <div class="section-tag">Our Heritage</div>
+          <h2 style="font-size: 2.4rem; color: var(--color-primary); margin-bottom: 1.25rem;">
+            A Boutique Firm with Generational Roots
+          </h2>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+            Founded with a singular mission to elevate real estate dealings in East Delhi, <strong>Naten Estates</strong> was born out of a desire for absolute transparency, architectural discernment, and unyielding integrity. While generic brokers focus on volume, we operate on curated matchmaking.
+          </p>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+            Operating from our primary base in <strong>East Delhi, Delhi NCR, India - 110092</strong>, we have witnessed the evolution of Preet Vihar, Mayur Vihar, and Anand Vihar into world-class residential corridors. We serve business leaders, senior advocates, doctors, and NRI families who expect white-glove advisory, sound investment insight, and total discretion.
+          </p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div style="max-width: 860px; margin: 0 auto;">
+          <div class="section-header">
+            <div class="section-tag">Frequently Answered</div>
+            <h2 class="section-title">Common Questions (FAQ)</h2>
+            <p class="section-subtitle">
+              Clear answers regarding buying, selling, and leasing luxury properties in East Delhi.
+            </p>
+          </div>
+
+          <div class="faq-accordion" id="aboutFaqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item active">
+              <button class="faq-question">
+                <span>What are the legal checks required when buying a builder floor in East Delhi?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer" style="max-height: 220px;">
+                In East Delhi (Pincode 110092 and surrounding sectors), builder floors must possess a sanctioned building plan by the Municipal Corporation of Delhi (MCD), a Completion/Occupancy Certificate (CC/OC), and a verified chain of previous title deeds extending at least 30 years. At Naten Estates, our legal panel conducts a complete Sub-Registrar title search and non-encumbrance verification before any agreement is signed.
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How does Naten Estates determine the market valuation of my property?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                We combine registered circle rates, recent actual transaction records within your specific colony block, floor position (e.g., ground with lawn or top with roof rights), road width, facing (Vastu orientation), and architectural fitting quality. This ensures your property is listed at the optimum valuation for a prompt, high-value closing.
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What is the standard lease protocol for residential and commercial rentals?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                For residential leases in East Delhi, a standard 11-month registered lease agreement or multi-year registered lease deed is executed with police tenant verification. For commercial office suites (such as in Laxmi Nagar or Vikas Marg), we structure 3 to 9-year commercial leases with standard 15% escalation clauses every 3 years and clearly demarcated maintenance responsibilities.
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can Naten Estates assist NRI clients with remote property management or sale?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                Yes. A significant portion of our clientele includes Non-Resident Indians (NRIs) owning ancestral or investment properties in East Delhi. We provide end-to-end representation including Power of Attorney (POA) registration guidance, 195/197 TDS Lower Deduction Certificate assistance, property staging, escrow facilitation, and repatriation support.
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>How can I book an escorted private viewing of a property?</span>
+                <span class="faq-icon">&darr;</span>
+              </button>
+              <div class="faq-answer">
+                You can easily click the "Book Appointment" CTA button anywhere on our website, select your preferred date and time slot, agree to our transparent Privacy Policy, and our director will arrange a dedicated, chauffeured property viewing. You can also message us directly on WhatsApp at +91 7011491747.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PAGE 6: CONTACT US PAGE
+         ================================================================== -->
+    <section class="page-view" id="view-contact" style="display: none;">
+      <div class="property-detail-header">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <a href="#home">Home</a>
+            <span>/</span>
+            <span style="color: var(--color-text);">Contact Us</span>
+          </nav>
+          <h1 style="font-size: clamp(2.4rem, 4vw, 3.5rem); color: var(--color-primary); margin-bottom: 0.5rem;">
+            Connect with Naten Estates
+          </h1>
+          <p style="color: var(--color-text-muted); max-width: 680px; font-size: 1.1rem;">
+            Visit our advisory office in East Delhi, call our client desk, or schedule a direct consultation on WhatsApp.
+          </p>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="contact-layout">
+          <!-- Left: Official Contact Card -->
+          <div class="contact-info-card">
+            <h3>Advisory Headquarters</h3>
+            <p>
+              Dedicated real estate consultants for East Delhi, Delhi NCR, and premier NCR expansion corridors.
+            </p>
+
+            <div class="contact-channels">
+              <!-- Primary WhatsApp & Mobile -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">WhatsApp / Primary Phone</span>
+                  <span class="channel-value"><a href="tel:+917011491747">+91 7011491747</a></span>
+                </div>
+              </div>
+
+              <!-- Secondary Phone -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Secondary Phone</span>
+                  <span class="channel-value"><a href="tel:+917011683813">+91 7011683813</a></span>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Head Office Address</span>
+                  <span class="channel-value">East Delhi, Delhi NCR, India - 110092</span>
+                </div>
+              </div>
+
+              <!-- Operating Hours -->
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Office & Viewing Hours</span>
+                  <span class="channel-value">Monday – Sunday: 9:30 AM – 8:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/917011491747" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid btn-block btn-lg">
+              Start WhatsApp Chat Now
+            </a>
+          </div>
+
+          <!-- Right: General Contact Form -->
+          <div class="search-filter-card" style="box-shadow: var(--shadow-xl);">
+            <h3 style="font-size: 1.8rem; color: var(--color-primary); margin-bottom: 0.5rem;">Send Us an Inquiry</h3>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+              Fill in your details and an East Delhi property director will get back to you promptly.
+            </p>
+
+            <form id="generalContactForm">
+              <div class="form-group">
+                <label class="form-label">Your Name <span class="required">*</span></label>
+                <input type="text" name="contactName" class="form-control" placeholder="e.g. Vikram Singhania" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Phone Number <span class="required">*</span></label>
+                <input type="tel" name="contactPhone" class="form-control" placeholder="10-digit Mobile Number" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email Address (Optional)</label>
+                <input type="email" name="contactEmail" class="form-control" placeholder="vikram@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">How Can We Help You?</label>
+                <textarea name="contactMessage" class="form-control" rows="4" placeholder="Tell us about the property type, budget, or preferred locality in East Delhi..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         PAGE 7: PROPERTY DETAIL VIEW (DYNAMIC)
+         ================================================================== -->
+    <section class="page-view" id="view-property-detail" style="display: none;">
+      <div id="propertyDetailContent">
+        <!-- Dynamically populated by renderPropertyDetailPage(id) -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       GLOBAL FLOATING WHATSAPP BUTTON (STICKY BOTTOM-RIGHT)
+       ====================================================================== -->
+  <a href="https://wa.me/917011491747" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with Naten Estates on WhatsApp">
+    <svg class="floating-whatsapp-icon" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.124-.078-.266-.086-.607-.202-1.033-.388-1.815-.791-3.003-2.616-3.093-2.738-.093-.122-.748-.997-.748-1.902 0-.907.474-1.353.644-1.538.169-.185.372-.232.497-.232.125 0 .25.002.359.007.116.006.271-.044.425.326.159.382.544 1.326.592 1.424.048.098.08.213.016.34-.063.128-.096.208-.19.319-.095.111-.2.248-.286.333-.095.095-.195.198-.084.388.111.19.493.814 1.057 1.317.728.648 1.341.85 1.531.944.19.095.302.079.414-.048.113-.127.483-.561.611-.754.128-.193.256-.16.429-.096.173.064 1.1.519 1.289.614.19.095.317.143.364.223.048.079.048.46-.096.865z"/>
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.174L2 22l4.981-1.309A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.644 0-3.17-.487-4.455-1.324l-.32-.209-3.23.847.862-3.15-.227-.361A8.17 8.17 0 0 1 3.8 12c0-4.521 3.679-8.2 8.2-8.2 4.521 0 8.2 3.679 8.2 8.2 0 4.521-3.679 8.2-8.2 8.2z"/>
+    </svg>
+    <div class="floating-whatsapp-text">
+      <span>Chat with us</span>
+      <span>WhatsApp</span>
+    </div>
+  </a>
+
+  <!-- ======================================================================
+       MODAL 1: BOOK AN APPOINTMENT (STRICT FIELDS & PRIVACY LOGIC)
+       ====================================================================== -->
+  <div class="modal-overlay" id="appointmentModal" role="dialog" aria-modal="true" aria-labelledby="appModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="appModalTitle">Book a Private Appointment</h3>
+        <button class="modal-close" aria-label="Close Appointment Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-bottom: 1.25rem;">
+          Schedule an escorted viewing or advisory consultation with Naten Estates in East Delhi.
+        </p>
+
+        <form id="modalAppointmentForm" novalidate>
+          <!-- Field 1: Full Name -->
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="fullName" class="form-control" placeholder="e.g. Ramesh Chandra" required />
+            <div class="form-error-msg error-fullName">Please enter your full name.</div>
+          </div>
+
+          <!-- Field 2: Phone Number -->
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit Mobile Number (e.g. 7011491747)" required />
+            <div class="form-error-msg error-phone">Please enter a valid 10-digit mobile number.</div>
+          </div>
+
+          <!-- Field 3: Property Interest (Dropdown) -->
+          <div class="form-group">
+            <label class="form-label">Property Interest <span class="required">*</span></label>
+            <select name="propertyInterest" class="form-control" required>
+              <option value="" disabled selected>Select Property / Service</option>
+              <!-- Dynamically populated by AppointmentManager.populatePropertySelects() -->
+            </select>
+            <div class="form-error-msg error-property">Please select a property of interest.</div>
+          </div>
+
+          <!-- Field 4: Preferred Time (Date + Slot) -->
+          <div class="form-group">
+            <label class="form-label">Preferred Time <span class="required">*</span></label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+              <input type="date" name="preferredDate" class="form-control" required />
+              <select name="timeSlot" class="form-control" required>
+                <option value="" disabled selected>Select Slot</option>
+                <option value="Morning 10:00 AM - 1:00 PM">Morning (10AM - 1PM)</option>
+                <option value="Afternoon 2:00 PM - 5:00 PM">Afternoon (2PM - 5PM)</option>
+                <option value="Evening 5:00 PM - 7:30 PM">Evening (5PM - 7:30PM)</option>
+              </select>
+            </div>
+            <div class="form-error-msg error-time">Please select both preferred date and time slot.</div>
+          </div>
+
+          <!-- STRICT MANDATORY PRIVACY POLICY CHECKBOX -->
+          <label class="checkbox-group" id="modalPrivacyGroup">
+            <input type="checkbox" name="privacyConsent" class="custom-checkbox" id="modalPrivacyCheckbox" required />
+            <span class="checkbox-label">
+              I agree to the <a href="#privacy" class="privacy-link privacy-modal-link" id="linkOpenPrivacy">Privacy Policy</a>.
+            </span>
+          </label>
+          <div class="form-error-msg error-privacy" style="margin-top: -12px; margin-bottom: 12px;">
+            You must agree to the Privacy Policy to book your appointment.
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitAppointmentBtn">
+              Confirm & Schedule Appointment
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 2: STRICT PRIVACY POLICY POPUP (CLEAN MODAL, NO REDIRECT)
+       ====================================================================== -->
+  <div class="modal-overlay" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyModalTitle" style="z-index: 2200;">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="privacyModalTitle">Privacy Policy</h3>
+        <button class="modal-close" aria-label="Close Privacy Modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+          At <strong>Naten Estates</strong>, your confidentiality and privacy are paramount.
+        </p>
+
+        <!-- EXACT REQUIRED PRIVACY STATEMENT -->
+        <div class="privacy-highlight-box">
+          &ldquo;We collect your name and phone number strictly to contact you regarding your property inquiry and to schedule your appointment. Your data is secure and will never be shared with third parties.&rdquo;
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.6; margin-top: 1.25rem;">
+          We do not sell, lease, or distribute our client directory to marketing agencies or unauthorized brokers. All property inquiries for East Delhi and Delhi NCR properties are managed internally by our designated directors.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-modal-dismiss">
+          Understood & Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 3: BOOKING CONFIRMATION SUCCESS MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="bookingSuccessModal" role="dialog" aria-modal="true" style="z-index: 2300;">
+    <div class="modal-dialog">
+      <div class="modal-header" style="background: var(--color-success-bg);">
+        <h3 class="modal-title" style="color: var(--color-success); font-size: 1.5rem;">Appointment Scheduled!</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #E2ECE5; color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 0;">
+            Your viewing request has been recorded with Naten Estates.
+          </p>
+        </div>
+
+        <div style="background: var(--color-bg); padding: 1rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); font-size: 0.88rem; display: flex; flex-direction: column; gap: 8px;">
+          <div><strong>Booking Ref:</strong> <span class="receipt-ref">NATEN-789123</span></div>
+          <div><strong>Name:</strong> <span class="receipt-name">Client Name</span></div>
+          <div><strong>Phone:</strong> <span class="receipt-phone">+91 0000000000</span></div>
+          <div><strong>Property:</strong> <span class="receipt-property">Selected Property</span></div>
+          <div><strong>Scheduled Slot:</strong> <span class="receipt-time">Upcoming Slot</span></div>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 1.25rem; text-align: center;">
+          For instant confirmation or location pin sharing, send your reference code to our director via WhatsApp:
+        </p>
+
+        <div style="margin-top: 1rem;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid btn-block btn-lg btn-send-whatsapp-receipt">
+            Send Details on WhatsApp (+91 7011491747)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       GLOBAL FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Narrative -->
+        <div class="footer-col">
+          <a href="#home" class="brand-logo" style="color: #FFFFFF;">
+            <span class="brand-logo-mark" style="background-color: var(--color-sage);">N</span>
+            <span>Naten Estates</span>
+          </a>
+          <p class="footer-desc">
+            East Delhi’s premier luxury real estate advisory. Dedicated to ethical transactions, verified freehold titles, and bespoke residential matchmaking across Preet Vihar, Mayur Vihar, and Anand Vihar.
+          </p>
+          <div style="margin-top: 1.25rem; font-size: 0.85rem; color: rgba(250, 247, 242, 0.7);">
+            <strong>RERA Delhi Registered Advisory</strong>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#buy">Buy Properties</a></li>
+            <li><a href="#sell">Sell With Us</a></li>
+            <li><a href="#rent">Rental Listings</a></li>
+            <li><a href="#about">About & FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Prime Localities -->
+        <div class="footer-col">
+          <h4>East Delhi Enclaves</h4>
+          <ul class="footer-links">
+            <li><a href="#buy">Preet Vihar Floors (110092)</a></li>
+            <li><a href="#buy">Mayur Vihar Penthouses (110091)</a></li>
+            <li><a href="#buy">Anand Vihar Bungalows</a></li>
+            <li><a href="#buy">Swasthya Vihar Park Enclaves</a></li>
+            <li><a href="#buy">Patparganj Residences</a></li>
+            <li><a href="#rent">Laxmi Nagar Commercial Hub</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Contact Information -->
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <div class="footer-contact-details">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <a href="tel:+917011491747">+91 7011491747</a> (Primary / WhatsApp)
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <a href="tel:+917011683813">+91 7011683813</a> (Secondary Desk)
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>East Delhi, Delhi NCR, India - 110092</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <button class="btn btn-outline-white btn-sm btn-block btn-trigger-appointment">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Privacy Link -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Naten Estates. All rights reserved. Registered Real Estate Advisory in East Delhi 110092.
+        </div>
+        <div style="display: flex; gap: 1.25rem;">
+          <a href="#privacy" class="privacy-modal-link">Privacy Policy</a>
+          <span>•</span>
+          <a href="#about">RERA Disclaimer</a>
+          <span>•</span>
+          <a href="#contact">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/properties-data.js"></script>
+  <script src="scripts/appointment.js"></script>
+  <script src="scripts/router.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

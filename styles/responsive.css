@@ -1,0 +1,226 @@
+/* ==========================================================================
+   NATEN ESTATES - RESPONSIVE & MOBILE NAVIGATION
+   ========================================================================== */
+
+/* Mobile Navigation Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 380px;
+  height: 100vh;
+  background-color: var(--color-bg);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+  z-index: 2500;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl);
+  transition: right var(--transition-normal);
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+}
+
+.mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(25, 30, 26, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2400;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+}
+
+.mobile-nav-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-xl);
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.mobile-nav-link {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  padding: 0.4rem 0;
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--color-primary);
+  padding-left: 8px;
+}
+
+.mobile-drawer-footer {
+  margin-top: auto;
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoints
+   -------------------------------------------------------------------------- */
+
+/* Large Tablets & Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 1.25rem;
+  }
+
+  .property-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-appointment-sidebar {
+    position: static;
+    max-width: 600px;
+    margin: var(--space-2xl) auto 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets (<= 860px) */
+@media (max-width: 860px) {
+  .nav-menu,
+  .header-actions .btn-appointment-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-grid .filter-btn-wrap {
+    grid-column: span 2;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-sidebar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 180px;
+  }
+}
+
+/* Mobile Devices (<= 640px) */
+@media (max-width: 640px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-grid .filter-btn-wrap {
+    grid-column: span 1;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg) var(--space-md);
+  }
+
+  .property-detail-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .property-detail-price-box {
+    text-align: left;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .floating-whatsapp {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+  }
+
+  .floating-whatsapp-text span:first-child {
+    display: none;
+  }
+
+  .modal-dialog {
+    margin: var(--space-xs);
+    max-height: 94vh;
+  }
+
+  .modal-header {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .modal-body {
+    padding: var(--space-lg);
+  }
+}
+
+/* Extra small devices (<= 380px) */
+@media (max-width: 380px) {
+  .brand-logo {
+    font-size: 1.2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .property-actions {
+    flex-direction: column;
+  }
+}
